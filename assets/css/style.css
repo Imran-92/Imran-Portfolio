@@ -1,0 +1,44 @@
+header {
+    background-color: rgb(1, 67, 124);
+    padding: 32px;
+    margin: -10px;
+}
+
+.site-nav {
+  display: grid;
+  grid-template-columns: 55% 15% 15% 15%;
+  grid-template-areas: 
+  "logo nav-1 nav-2 nav-3";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    grid-area: logo;
+    background: url("../images/Logo.png") center center;
+    background-size: cover;
+    margin: -13px;
+}
+
+#nav-1 {
+    grid-area: nav-1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-2 {
+    grid-area: nav-2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-3 {
+    grid-area: nav-3;
+    display: flex;
+    justify-content: flex-end;
+}
