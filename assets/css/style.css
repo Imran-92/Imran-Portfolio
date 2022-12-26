@@ -1,10 +1,7 @@
-header {
-    background-color: rgb(1, 67, 124);
-    padding: 32px;
-    margin: -10px;
-}
-
 .site-nav {
+  background-color: #173753;
+  padding: 20px;
+  margin: -10px;
   display: grid;
   grid-template-columns: 55% 15% 15% 15%;
   grid-template-areas: 
@@ -18,27 +15,67 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#logo {
-    grid-area: logo;
-    background: url("../images/Logo.png") center center;
-    background-size: cover;
-    margin: -13px;
+.logo {
+    position: relative;
+    height: 64px;
+    width: 50%;
+    background-color: #6DAEDB;
+    margin-left: -20px;
+    
 }
 
-#nav-1 {
+.logo-text {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin: -50px 0 0 -50px;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.nav-1 {
     grid-area: nav-1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-#nav-2 {
+.nav-2 {
     grid-area: nav-2;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-#nav-3 {
+.nav-3 {
     grid-area: nav-3;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    padding: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.head-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    object-fit: cover;
+    background-image: url("../images/header-img.png");
+}
+
+.content {
+    display: grid;
+    bor
+
 }
