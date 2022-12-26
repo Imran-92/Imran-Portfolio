@@ -1,67 +1,50 @@
-.site-nav {
-  background-color: #173753;
-  padding: 20px;
-  margin: -10px;
-  display: grid;
-  grid-template-columns: 55% 15% 15% 15%;
-  grid-template-areas: 
-  "logo nav-1 nav-2 nav-3";
+html, body {
+    margin: 0px;
+    padding: 0px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.headerContainer {
+    height: 14vh;
+    background-color: #173753;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 }
 
 .logo {
-    position: relative;
-    height: 64px;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #6DAEDB;
-    margin-left: -20px;
-    
+    margin: 14px 0px 14px;
 }
 
 .logo-text {
-  position: absolute;
-  top: 100%;
-  left: 30%;
-  margin: -50px 0 0 -50px;
-  font-weight: bolder;
-  font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+   
 }
 
-.nav-1 {
-    grid-area: nav-1;
+.navlinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 }
 
-.nav-2 {
-    grid-area: nav-2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
-.nav-3 {
-    grid-area: nav-3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.container {
+.headerImage {
     display: flex;
     flex-direction: row;
-    height: 250px;
+    height: 300px;
     padding: 0px;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
 }
 
 .head-img {
@@ -76,6 +59,20 @@ a {
 
 .content {
     display: grid;
-    bor
+    grid-template-columns: 25% 75%;
+    height: 200vh;
 
+}
+
+.headings {
+    background-color: #173753;
+}
+
+.details {
+    background-color: #6DAEDB;
+}
+
+.footer {
+    background-color: #000000;
+    height: 10vh;
 }
