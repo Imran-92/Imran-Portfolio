@@ -3,6 +3,8 @@ html, body {
     padding: 0px;
 }
 
+/* header CSS properties */
+
 .headerContainer {
     height: 14vh;
     background-color: #173753;
@@ -57,22 +59,57 @@ html, body {
     background-image: url("../images/header-img.png");
 }
 
+/* main content CSS properties */
+
 .content {
-    display: grid;
-    grid-template-columns: 25% 75%;
+    border: 4px solid red;
     height: 200vh;
-
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "leftTop rightTop"
+    "leftMiddle rightMiddle"
+    "leftBottom rightMiddle";
 }
 
-.headings {
-    background-color: #173753;
+.title1 {
+    grid-area: "leftTop";
+    border: 1px solid yellow;
 }
 
-.details {
-    background-color: #6DAEDB;
+.desc1 {
+    grid-area: "rightTop";
+    border: 1px solid orange;
 }
+
+.title2 {
+    grid-area: "leftMiddle";
+    border: 1px solid rgb(255, 0, 174);
+}
+
+.desc2 {
+    grid-area: "rightMiddle";
+    border: 1px solid rgb(27, 165, 121);
+}
+
+.title3 {
+    grid-area: "leftBottom";
+    border: 1px solid yellow;
+}
+
+.desc3 {
+    grid-area: "rightBottom";
+    border: 1px solid orange;
+}
+
+
+/* footer CSS properties */
 
 .footer {
-    background-color: #000000;
+    background-color:#173753;
     height: 10vh;
 }
+
+/* media queries properties */
+
