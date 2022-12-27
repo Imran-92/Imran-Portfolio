@@ -46,18 +46,21 @@ html, body {
 }
 
 .headerImage {
-    display: flex;
-    flex-direction: row;
     height: 300px;
     padding: 0px;
+    position: relative;
 }
 
 .head-img {
     height: 100%;
     width: 100%;
-    align-items: center;
-    object-fit: cover;
     background-image: url("../images/header-img.png");
+}
+
+.avatar {
+    position: absolute;
+    top: 170px;
+    left: 80px;
 }
 
 /* main content CSS properties */
@@ -89,6 +92,7 @@ html, body {
     font-size: 22px;
     padding: 22px;
     color:#000000;
+    margin:12px 0px 12px 0px
 }
 
 .title2 {
@@ -133,18 +137,6 @@ html, body {
     background-image: url("../images/FurnitureStore.png");
 }
 
-
-.title3 {
-    grid-area: leftBottom;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    color: rgb(255, 169, 57);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-}
-
 .desc3 {
     grid-area: rightBottom;
     display: flex;
@@ -153,8 +145,16 @@ html, body {
 }
 
 /* styling */
-
-.title1, .title2 {
+.title1 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: rgb(255, 169, 57);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+.title2 {
     display: flex;
     justify-content: center;
     align-items:flex-start;
@@ -162,6 +162,20 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 32px;
+}
+
+.title3 {
+    grid-area: leftBottom;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.title1, .title2, .title3 {
+    color: rgb(255, 169, 57);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .desc2> a {
