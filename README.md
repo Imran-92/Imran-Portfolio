@@ -7,5 +7,5 @@ I used CSS properties flex, grid to define the rows and columns and overall layo
 ## Webpage Link
 https://imran-92.github.io/Imran-Portfolio/
 
-##Webpage Screenshot
+## Webpage Screenshot
 ![image](https://user-images.githubusercontent.com/111693779/210110606-a9733007-8340-4e04-832a-8937778aff05.png)
