@@ -307,7 +307,7 @@ h3 > p > a {
 
 /* media queries properties */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .headerContainer {
     height: 12vh;
     background-color: #000000;
